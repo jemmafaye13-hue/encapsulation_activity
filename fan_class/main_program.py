@@ -40,3 +40,13 @@ class Fan:
     def set_on(self, on):
         self.__on = bool(on)
 
+    def display_properties(self, name):
+        border = "═" * 35
+        print(f"\n║ {name.upper() :^31} ║")
+        print(border)
+        print(f" Status  : {'▶ ON' if self.__on else '🛑 OFF'}")
+        print(f" Speed   : {self.__speed}")
+        print(f" Radius  : {self.__radius} cm")
+        print(f" Color   : {self.__color.capitalize()}")
+        print(border)
+
