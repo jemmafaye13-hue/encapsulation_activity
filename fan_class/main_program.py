@@ -24,3 +24,19 @@ class Fan:
     def is_on(self):
         return self.__on
 
+    # --- Setters (Mutators) ---
+    def set_speed(self, speed):
+        if speed in [Fan.SLOW, Fan.MEDIUM, Fan.FAST]:
+            self.__speed = speed
+        else:
+            print("Invalid speed setting!")
+
+    def set_radius(self, radius):
+        self.__radius = float(radius)
+
+    def set_color(self, color):
+        self.__color = str(color)
+
+    def set_on(self, on):
+        self.__on = bool(on)
+
