@@ -50,3 +50,12 @@ class Fan:
         print(f" Color   : {self.__color.capitalize()}")
         print(border)
 
+if __name__ == "__main__":
+    print("INITIALIZING FAN TESTS")
+
+    fan1 = Fan(speed=Fan.FAST, radius=10, color="yellow", on=True)
+    fan1.display_properties("Fan 1")
+
+    fan2 = Fan(speed=Fan.MEDIUM, radius=5, color="blue", on=False)
+    fan2.display_properties("Fan 2")
+
