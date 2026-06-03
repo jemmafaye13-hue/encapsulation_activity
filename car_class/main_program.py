@@ -13,4 +13,11 @@ class Car:
         """Brake the car by subtracting 5, ensuring speed doesn't drop below 0."""
         self.__speed = max(0, self.__speed - 5)
 
+    # --- Accessors ---
+    def get_speed(self):
+            return self.__speed
+
+    def get_car_info(self):
+        return f"{self.__year_model} {self.__make}"
+
     
