@@ -18,3 +18,13 @@ class Pet:
         except ValueError:
             print(" Age must be an integer numeric value. Defaulted to 0.")
             self.__age = 0
+
+    # --- Getters (Accessors) ---
+    def get_name(self):
+        return self.__name
+
+    def get_animal_type(self):
+        return self.__animal_type
+
+    def get_age(self):
+        return self.__age
